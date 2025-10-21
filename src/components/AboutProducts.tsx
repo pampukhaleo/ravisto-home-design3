@@ -2,24 +2,24 @@ import { Leaf, Shield, Award, Heart } from "lucide-react";
 
 const features = [
   {
+    icon: Leaf,
+    title: "Натуральні матеріали",
+    description: "Використовуємо лише екологічно чисті тканини: льон, бавовна, шовк",
+  },
+  {
     icon: Shield,
-    title: "Перевірені постачальники",
-    description: "Ми працюємо лише з перевіреними постачальниками тканин",
+    title: "Гарантія якості",
+    description: "Кожен виріб проходить ретельний контроль якості",
   },
   {
     icon: Award,
-    title: "Контроль якості",
-    description: "Кожен виріб проходить контроль якості на складі",
-  },
-  {
-    icon: Leaf,
-    title: "Швидка доставка",
-    description: "Швидка доставка по Україні (1–4 дні)",
+    title: "Європейські стандарти",
+    description: "Виробництво відповідає найвищим європейським стандартам",
   },
   {
     icon: Heart,
-    title: "Особистий підхід",
-    description: "Консультація та допомога у виборі кольору та матеріалів. Можливість замовлення через Instagram або Telegram",
+    title: "З любов'ю до деталей",
+    description: "Унікальний дизайн та увага до кожної деталі",
   },
 ];
 
@@ -29,8 +29,11 @@ const AboutProducts = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Чому обирають нас
+            Про наші продукти
           </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Ми створюємо текстиль, який дарує затишок та комфорт вашому дому
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

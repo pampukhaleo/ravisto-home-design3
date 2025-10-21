@@ -8,31 +8,38 @@ import blanketImage from "@/assets/product-blanket.jpg";
 const products = [
   {
     id: 1,
-    name: "Постільна білизна Premium",
-    description: "100% льон, натуральні відтінки",
-    price: "2 990 грн",
-    image: beddingImage,
-  },
-  {
-    id: 2,
-    name: "Декоративні подушки",
-    description: "М'які наповнювачі, стійкі тканини",
-    price: "890 грн",
-    image: pillowsImage,
-  },
-  {
-    id: 3,
-    name: "Банні рушники",
-    description: "Бавовна преміум-класу",
-    price: "650 грн",
+    name: "Рушники",
+    description: "м'які, поглинаючі, різних розмірів",
+    price: "від 450 грн",
     image: towelsImage,
   },
   {
-    id: 4,
-    name: "Пледи та ковдри",
-    description: "Тепло та затишок для вашого дому",
-    price: "1 790 грн",
+    id: 2,
+    name: "Постіль",
+    description: "сатин, бязь, поплін комплекти та окремі елементи",
+    price: "від 1 890 грн",
+    image: beddingImage,
+  },
+  {
+    id: 3,
+    name: "Пледи",
+    description: "теплі, фактурні, у модних кольорах",
+    price: "від 1 290 грн",
     image: blanketImage,
+  },
+  {
+    id: 4,
+    name: "Декор",
+    description: "квіткові композиції, вази, ароматизовані свічки",
+    price: "від 350 грн",
+    image: pillowsImage,
+  },
+  {
+    id: 5,
+    name: "Чаї",
+    description: "натуральні бленди та чайні набори для затишних моментів",
+    price: "від 180 грн",
+    image: beddingImage,
   },
 ];
 
@@ -42,14 +49,14 @@ const Products = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Наші товари
+            Наш асортимент
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Кожен виріб створений з любов'ю до деталей та натуральних матеріалів
+            М'якість рушників, ніжність постелі, затишок пледів і аромати домашніх чаїв — у кожному товарі ми поєднали турботу й якість
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {products.map((product) => (
             <Card
               key={product.id}

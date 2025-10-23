@@ -29,12 +29,6 @@ const Header = () => {
               Про нас
             </button>
             <button
-              onClick={() => scrollToSection("reviews")}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
-            >
-              Відгуки
-            </button>
-            <button
               onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
             >

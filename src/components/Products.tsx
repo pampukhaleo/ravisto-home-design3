@@ -56,33 +56,37 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="flex flex-col gap-6 max-w-5xl mx-auto">
           {products.map((product) => (
             <Card
               key={product.id}
               className="overflow-hidden border-0 shadow-soft hover:shadow-medium transition-smooth bg-card rounded-2xl group"
             >
-              <div className="relative overflow-hidden aspect-square">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-primary mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-muted-foreground mb-4">{product.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-terracotta">
-                    {product.price}
-                  </span>
-                  <Button variant="secondary" size="sm">
-                    Детальніше
-                  </Button>
+              <div className="flex flex-col md:flex-row">
+                <div className="relative overflow-hidden md:w-80 h-64 md:h-auto flex-shrink-0">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+                  />
                 </div>
-              </CardContent>
+                <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-3">
+                      {product.name}
+                    </h3>
+                    <p className="text-lg text-muted-foreground mb-6">{product.description}</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl md:text-3xl font-bold text-terracotta">
+                      {product.price}
+                    </span>
+                    <Button variant="secondary" size="lg">
+                      Детальніше
+                    </Button>
+                  </div>
+                </CardContent>
+              </div>
             </Card>
           ))}
         </div>

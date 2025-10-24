@@ -175,11 +175,11 @@ const ContactForm = () => {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Понеділок - П'ятниця:</span>
-                  <span className="font-semibold">9:00 - 20:00</span>
+                  <span className="font-semibold">8:00 - 17:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Субота - Неділя:</span>
-                  <span className="font-semibold">10:00 - 18:00</span>
+                  <span className="font-semibold">Вихідні</span>
                 </div>
               </div>
             </div>

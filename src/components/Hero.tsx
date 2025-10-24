@@ -13,8 +13,11 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Затишна спальня з якісним текстилем Ravisto.Home"
+          alt="Затишна спальня з якісним домашнім текстилем - постільна білизна, подушки та пледи від Ravisto.Home"
           className="w-full h-full object-cover"
+          width="1920"
+          height="700"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-transparent" />
       </div>

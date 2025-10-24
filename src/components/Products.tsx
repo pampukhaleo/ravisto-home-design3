@@ -66,8 +66,11 @@ const Products = () => {
                 <div className="relative overflow-hidden md:w-80 h-64 md:h-auto flex-shrink-0">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`${product.name} - ${product.description} від Ravisto.Home`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+                    loading="lazy"
+                    width="320"
+                    height="256"
                   />
                 </div>
                 <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">

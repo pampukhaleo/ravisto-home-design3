@@ -16,18 +16,23 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
+                aria-label="Facebook сторінка Ravisto.Home"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ravisto.home"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
+                aria-label="Instagram сторінка Ravisto.Home"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="mailto:info@ravisto.home"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
+                aria-label="Написати email на info@ravisto.home"
               >
                 <Mail className="w-5 h-5" />
               </a>

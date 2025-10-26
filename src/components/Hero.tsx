@@ -35,7 +35,12 @@ const Hero = () => {
               Переглянути каталог
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" onClick={() => scrollToSection("about")}>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              onClick={() => scrollToSection("about")}
+              className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
+            >
               Дізнатися більше
             </Button>
           </div>

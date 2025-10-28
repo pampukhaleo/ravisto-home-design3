@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ravisto.Home - Якісний домашній текстиль</title>
-    <meta name="description" content="Ravisto.Home - магазин преміального домашнього текстилю. Ковдри, подушки, постільна білизна та аксесуари для затишного дому. Швидка доставка по Україні." />
+    <meta name="description" content="Ravisto.Home - преміальний домашній текстиль в Україні. Якісна постільна білизна, м'які рушники, теплі пледи, домашній декор та чай. Доставка 1-3 дні. Безкоштовна від 1200 грн." />
     <meta name="keywords" content="домашній текстиль, постільна білизна, ковдри, подушки, рушники, пледи, домашній декор, купити текстиль Україна, Ravisto.Home, якісний текстиль, текстиль для дому" />
     <meta name="author" content="Ravisto.Home" />
     <meta name="robots" content="index, follow" />
@@ -19,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="/src/assets/hero-bedroom.jpg" type="image/jpeg">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -50,7 +53,7 @@
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+380-XX-XXX-XXXX",
+        "telephone": "+380123456789",
         "contactType": "Customer Service",
         "availableLanguage": "Ukrainian"
       },
@@ -97,6 +100,141 @@
           "position": 4,
           "name": "Контакти",
           "item": "https://ravisto.home/#contact"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ravisto.Home",
+      "image": "https://ravisto.home/hero-bedroom.jpg",
+      "description": "Магазин преміального домашнього текстилю в Україні",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Хрещатик, 1",
+        "addressLocality": "Київ",
+        "addressCountry": "UA"
+      },
+      "telephone": "+380123456789",
+      "email": "info@ravisto.home",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "url": "https://ravisto.home",
+      "sameAs": [
+        "https://www.instagram.com/ravisto.home"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Час доставки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1–3 дні по Україні. При замовленні від 1200 грн - доставка безкоштовна"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Де виробляєте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Власне виробництво та прямі постачання з країн Европи та Азії"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можливий опт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так, умови за запитом у Telegram/Instagram"
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Рушники",
+          "description": "м'які, поглинаючі, різних розмірів",
+          "image": "https://ravisto.home/product-towels.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "450",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ravisto.home/#products"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Постіль",
+          "description": "сатин, бязь, поплін комплекти та окремі елементи",
+          "image": "https://ravisto.home/product-bedding.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "1890",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ravisto.home/#products"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Пледи",
+          "description": "теплі, фактурні, у модних кольорах",
+          "image": "https://ravisto.home/product-blanket.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "1290",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ravisto.home/#products"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Декор",
+          "description": "квіткові композиції, вази, ароматизовані свічки",
+          "image": "https://ravisto.home/product-pillows.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "350",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ravisto.home/#products"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Чаї",
+          "description": "натуральні бленди та чайні набори для затишних моментів",
+          "image": "https://ravisto.home/product-bedding.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "180",
+            "priceCurrency": "UAH",
+            "availability": "https://schema.org/InStock",
+            "url": "https://ravisto.home/#products"
+          }
         }
       ]
     }

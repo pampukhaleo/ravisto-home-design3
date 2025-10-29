@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Instagram } from "lucide-react";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -42,10 +42,27 @@ const Header = () => {
             </button>
           </nav>
 
-          <Button variant="hero" size="sm" onClick={() => scrollToSection("contact")}>
-            <ShoppingBag className="w-4 h-4" />
-            Замовити
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button 
+              variant="ghost" 
+              size="icon"
+              asChild
+              className="hover:text-primary"
+            >
+              <a 
+                href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Перейти в Instagram Ravisto.Home"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </Button>
+            <Button variant="hero" size="sm" onClick={() => scrollToSection("contact")}>
+              <ShoppingBag className="w-4 h-4" />
+              Замовити
+            </Button>
+          </div>
         </div>
       </div>
     </header>

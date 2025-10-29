@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Instagram } from "lucide-react";
 import heroImage from "@/assets/hero-bedroom.jpg";
 
 const Hero = () => {
@@ -43,6 +43,17 @@ const Hero = () => {
             >
               Дізнатися більше
             </Button>
+          </div>
+          <div className="flex gap-4 mt-6">
+            <a 
+              href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-smooth"
+              aria-label="Перейти в Instagram Ravisto.Home"
+            >
+              <Instagram className="w-6 h-6 text-primary" />
+            </a>
           </div>
         </div>
       </div>

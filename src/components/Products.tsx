@@ -1,9 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Instagram } from "lucide-react";
 import beddingImage from "@/assets/product-bedding.jpg";
 import pillowsImage from "@/assets/product-pillows.jpg";
 import towelsImage from "@/assets/product-towels.jpg";
 import blanketImage from "@/assets/product-blanket.jpg";
+import teaImage from "@/assets/product-tea.jpg";
+import decorImage from "@/assets/product-decor.jpg";
 
 const products = [
   {
@@ -32,18 +35,23 @@ const products = [
     name: "Декор",
     description: "квіткові композиції, вази, ароматизовані свічки",
     price: "від 350 грн",
-    image: pillowsImage,
+    image: decorImage,
   },
   {
     id: 5,
     name: "Чаї",
     description: "натуральні бленди та чайні набори для затишних моментів",
     price: "від 180 грн",
-    image: beddingImage,
+    image: teaImage,
   },
 ];
 
 const Products = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="products" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
@@ -80,13 +88,36 @@ const Products = () => {
                     </h3>
                     <p className="text-lg text-muted-foreground mb-6">{product.description}</p>
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <span className="text-2xl md:text-3xl font-bold text-terracotta">
                       {product.price}
                     </span>
-                    <Button variant="secondary" size="lg">
-                      Детальніше
-                    </Button>
+                    <div className="flex gap-3 w-full sm:w-auto">
+                      <Button 
+                        variant="secondary" 
+                        size="lg"
+                        onClick={() => scrollToSection("contact")}
+                        className="flex-1 sm:flex-initial"
+                      >
+                        Детальніше
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        size="lg"
+                        asChild
+                        className="flex-1 sm:flex-initial"
+                      >
+                        <a 
+                          href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2"
+                        >
+                          <Instagram className="w-5 h-5" />
+                          Instagram
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </div>

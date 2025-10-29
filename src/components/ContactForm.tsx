@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -132,10 +132,10 @@ const ContactForm = () => {
                       Телефон
                     </div>
                     <a
-                      href="tel:+380123456789"
+                      href="tel:+380505644141"
                       className="text-muted-foreground hover:text-terracotta transition-smooth"
                     >
-                      +38 (012) 345-67-89
+                      +38 (050) 564 41 41
                     </a>
                   </div>
                 </div>
@@ -147,24 +147,11 @@ const ContactForm = () => {
                   <div>
                     <div className="font-semibold text-primary mb-1">Email</div>
                     <a
-                      href="mailto:info@ravisto.home"
+                      href="mailto:ravistohome@gmail.com"
                       className="text-muted-foreground hover:text-terracotta transition-smooth"
                     >
-                      info@ravisto.home
+                      ravistohome@gmail.com
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-terracotta/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-terracotta" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-primary mb-1">Адреса</div>
-                    <p className="text-muted-foreground">
-                      м. Київ, вул. Хрещатик, 1<br />
-                      Офіс 501
-                    </p>
                   </div>
                 </div>
               </div>

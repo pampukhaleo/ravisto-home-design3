@@ -45,15 +45,22 @@ const Hero = () => {
             </Button>
           </div>
           <div className="flex gap-4 mt-6">
-            <a 
-              href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-smooth"
-              aria-label="Перейти в Instagram Ravisto.Home"
+            <Button 
+              variant="outline" 
+              size="default"
+              asChild
+              className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
             >
-              <Instagram className="w-6 h-6 text-primary" />
-            </a>
+              <a 
+                href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                <Instagram className="w-5 h-5" />
+                Слідкуйте за нами в Instagram
+              </a>
+            </Button>
           </div>
         </div>
       </div>

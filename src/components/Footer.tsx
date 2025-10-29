@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,14 +14,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
-                aria-label="Facebook сторінка Ravisto.Home"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/ravisto.home"
+                href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
                 aria-label="Instagram сторінка Ravisto.Home"
                 target="_blank"
@@ -30,9 +23,9 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:info@ravisto.home"
+                href="mailto:ravistohome@gmail.com"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
-                aria-label="Написати email на info@ravisto.home"
+                aria-label="Написати email на ravistohome@gmail.com"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -94,10 +87,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-lg">Контакти</h3>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>+38 (012) 345-67-89</li>
-              <li>info@ravisto.home</li>
-              <li>м. Київ, вул. Хрещатик, 1</li>
-              <li>Пн-Пт: 9:00 - 20:00</li>
+              <li>+38 (050) 564 41 41</li>
+              <li>ravistohome@gmail.com</li>
+              <li>Пн-Пт: 8:00 - 17:00</li>
             </ul>
           </div>
         </div>

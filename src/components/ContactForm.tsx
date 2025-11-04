@@ -11,7 +11,6 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    email: "",
     message: "",
   });
 
@@ -21,7 +20,7 @@ const ContactForm = () => {
       title: "Дякуємо за заявку!",
       description: "Ми зв'яжемося з вами найближчим часом.",
     });
-    setFormData({ name: "", phone: "", email: "", message: "" });
+    setFormData({ name: "", phone: "", message: "" });
   };
 
   const handleChange = (
@@ -76,21 +75,6 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className="mt-2 rounded-2xl border-2 h-12"
                   placeholder="+380"
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="email" className="text-primary font-semibold">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="mt-2 rounded-2xl border-2 h-12"
-                  placeholder="your@email.com"
                 />
               </div>
 

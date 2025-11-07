@@ -41,17 +41,7 @@ const Hero = () => {
               onClick={() => scrollToSection("about")}
               className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
             >
-              Дізнатися більше
-            </Button>
-          </div>
-          <div className="flex gap-4 mt-6">
-            <Button 
-              variant="outline" 
-              size="default"
-              asChild
-              className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
-            >
-              <a 
+              <a
                 href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,6 +51,8 @@ const Hero = () => {
                 Слідкуйте за нами в Instagram
               </a>
             </Button>
+          </div>
+          <div className="flex gap-4 mt-6">
           </div>
         </div>
       </div>

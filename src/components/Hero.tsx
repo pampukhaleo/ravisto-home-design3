@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[700px] flex items-center pt-20">
+    <section className="relative h-[700px] flex items-center pt-32 md:pt-20">
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}

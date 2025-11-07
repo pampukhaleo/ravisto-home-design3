@@ -24,10 +24,10 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-heading">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-heading">
             Ravisto.Home — дім, у якому хочеться залишитись
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
             Постіль, рушники, пледи, домашній декор і чай — усе, щоб створити тепло, яке відчуваєш серцем.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

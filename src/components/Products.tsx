@@ -71,7 +71,7 @@ const Products = () => {
               className="overflow-hidden border-0 shadow-soft hover:shadow-medium transition-smooth bg-card rounded-2xl group"
             >
               <div className="flex flex-col md:flex-row">
-                <div className="relative overflow-hidden md:w-80 h-64 md:h-auto flex-shrink-0">
+                <div className="relative overflow-hidden w-full md:w-80 h-56 md:h-auto flex-shrink-0">
                   <img
                     src={product.image}
                     alt={`${product.name} - ${product.description} від Ravisto.Home`}
@@ -83,21 +83,21 @@ const Products = () => {
                 </div>
                 <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-semibold text-heading mb-3">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-heading mb-3">
                       {product.name}
                     </h3>
-                    <p className="text-lg text-muted-foreground mb-6">{product.description}</p>
+                    <p className="text-base sm:text-lg text-muted-foreground mb-4 md:mb-6">{product.description}</p>
                   </div>
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <span className="text-2xl md:text-3xl font-bold text-terracotta">
+                    <span className="text-xl sm:text-2xl md:text-3xl font-bold text-terracotta">
                       {product.price}
                     </span>
-                    <div className="flex gap-3 w-full sm:w-auto">
+                    <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                       <Button 
                         variant="secondary" 
                         size="lg"
                         onClick={() => scrollToSection("contact")}
-                        className="flex-1 sm:flex-initial"
+                        className="w-full sm:w-auto h-12"
                       >
                         Детальніше
                       </Button>
@@ -105,13 +105,13 @@ const Products = () => {
                         variant="outline" 
                         size="lg"
                         asChild
-                        className="flex-1 sm:flex-initial"
+                        className="w-full sm:w-auto h-12"
                       >
                         <a 
                           href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2"
+                          className="inline-flex items-center justify-center gap-2"
                         >
                           <Instagram className="w-5 h-5" />
                           Instagram

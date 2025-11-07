@@ -31,7 +31,7 @@ const Hero = () => {
             Постіль, рушники, пледи, домашній декор і чай — усе, щоб створити тепло, яке відчуваєш серцем.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" onClick={() => scrollToSection("products")}>
+            <Button variant="hero" size="lg" onClick={() => scrollToSection("products")} className="h-14 text-base">
               Переглянути каталог
               <ArrowRight className="w-5 h-5" />
             </Button>
@@ -39,7 +39,7 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               onClick={() => scrollToSection("about")}
-              className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none"
+              className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none h-14 text-base"
             >
               <a
                 href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"

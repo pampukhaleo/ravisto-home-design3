@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-heading mb-4">
             Чому обирають нас
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
               <div className="w-16 h-16 rounded-full bg-gradient-warm flex items-center justify-center mb-4 shadow-soft">
                 <reason.icon className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">
+              <h3 className="text-lg font-semibold text-heading mb-2">
                 {reason.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

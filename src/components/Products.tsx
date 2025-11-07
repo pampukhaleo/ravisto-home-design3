@@ -56,7 +56,7 @@ const Products = () => {
     <section id="products" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-heading mb-4">
             Наш асортимент
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ const Products = () => {
                 </div>
                 <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-3">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-heading mb-3">
                       {product.name}
                     </h3>
                     <p className="text-lg text-muted-foreground mb-6">{product.description}</p>

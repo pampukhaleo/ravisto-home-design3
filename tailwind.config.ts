@@ -52,6 +52,7 @@ export default {
         brown: "hsl(var(--brown))",
         blueGrey: "hsl(var(--blue-grey))",
         lightGrey: "hsl(var(--light-grey))",
+        heading: "hsl(var(--heading))",
       },
       backgroundImage: {
         'gradient-warm': 'var(--gradient-warm)',

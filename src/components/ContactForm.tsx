@@ -36,7 +36,7 @@ const ContactForm = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-heading mb-4">
             Зв'яжіться з нами
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -103,7 +103,7 @@ const ContactForm = () => {
 
           <div className="space-y-8">
             <div className="bg-card rounded-2xl p-8 shadow-soft">
-              <h3 className="text-2xl font-bold text-primary mb-6">
+              <h3 className="text-2xl font-bold text-heading mb-6">
                 Наші контакти
               </h3>
               <div className="space-y-6">

@@ -7,7 +7,7 @@ const About = () => {
             <p className="text-terracotta font-semibold text-lg mb-4">
               Бренд Ravisto.Home
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-heading mb-6">
               Ми віримо, що затишок створюють деталі
             </h2>
           </div>

@@ -28,7 +28,7 @@ const Benefits = () => {
               <div className="w-14 h-14 rounded-full bg-terracotta/10 flex items-center justify-center">
                 <benefit.icon className="w-7 h-7 text-terracotta" />
               </div>
-              <h3 className="font-semibold text-lg text-primary">
+              <h3 className="font-semibold text-lg text-heading">
                 {benefit.title}
               </h3>
             </div>

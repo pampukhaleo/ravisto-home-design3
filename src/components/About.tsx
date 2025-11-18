@@ -5,7 +5,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-terracotta font-semibold text-lg mb-4">
-              Бренд Ravisto.Home
+              Бренд Ravisto Bloom Home
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-heading mb-6">
               Ми віримо, що затишок створюють деталі
@@ -14,7 +14,7 @@ const About = () => {
 
           <div className="text-lg text-foreground leading-relaxed text-center">
             <p>
-              Ravisto.Home — це не просто домашній текстиль. Це історія про турботу, комфорт і красу щодня. Ми підбираємо тканини, що приємні до тіла, кольори, що гармоніюють з настроєм, і деталі, які роблять ваш дім живим.
+              Ravisto Bloom Home — це не просто домашній текстиль. Це історія про турботу, комфорт і красу щодня. Ми підбираємо тканини, що приємні до тіла, кольори, що гармоніюють з настроєм, і деталі, які роблять ваш дім живим.
             </p>
           </div>
         </div>

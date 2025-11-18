@@ -74,7 +74,7 @@ const Products = () => {
                 <div className="relative overflow-hidden w-full md:w-80 h-56 md:h-auto flex-shrink-0">
                   <img
                     src={product.image}
-                    alt={`${product.name} - ${product.description} від Ravisto.Home`}
+                    alt={`${product.name} - ${product.description} від Ravisto Bloom Home`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
                     loading="lazy"
                     width="320"

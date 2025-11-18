@@ -1,1 +1,4 @@
 project_id = "cdqolplrdwwxdbnlgize"
+
+[functions.ravisto-bloom-send-telegram]
+verify_jwt = false

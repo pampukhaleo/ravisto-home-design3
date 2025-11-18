@@ -4,23 +4,59 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Дякуємо за заявку!",
-      description: "Ми зв'яжемося з вами найближчим часом.",
-    });
-    setFormData({ name: "", phone: "", message: "" });
+    setIsLoading(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke(
+        'ravisto-bloom-send-telegram',
+        {
+          body: {
+            name: formData.name,
+            phone: formData.phone,
+            message: formData.message,
+          },
+        }
+      );
+
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw new Error(error.message || 'Помилка відправки');
+      }
+
+      if (!data?.success) {
+        throw new Error(data?.error || 'Помилка відправки');
+      }
+
+      toast({
+        title: "Дякуємо за заявку!",
+        description: "Ми зв'яжемося з вами найближчим часом.",
+      });
+      
+      setFormData({ name: "", phone: "", message: "" });
+    } catch (error: any) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Помилка",
+        description: error.message || "Не вдалося відправити заявку. Спробуйте ще раз.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (
@@ -95,8 +131,21 @@ const ContactForm = () => {
                 />
               </div>
 
-              <Button type="submit" variant="hero" size="lg" className="w-full">
-                Відправити заявку
+              <Button 
+                type="submit" 
+                variant="hero" 
+                size="lg" 
+                className="w-full"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Відправка...
+                  </>
+                ) : (
+                  'Відправити заявку'
+                )}
               </Button>
             </form>
           </div>

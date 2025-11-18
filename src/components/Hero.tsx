@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Затишна спальня з якісним домашнім текстилем - постільна білизна, подушки та пледи від Ravisto.Home"
+          alt="Затишна спальня з якісним домашнім текстилем - постільна білизна, подушки та пледи від Ravisto Bloom Home"
           className="w-full h-full object-cover"
           width="1920"
           height="700"
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-heading">
-            Ravisto.Home — дім, у якому хочеться залишитись
+            Ravisto Bloom Home — дім, у якому хочеться залишитись
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed">
             Постіль, рушники, пледи, домашній декор і чай — усе, щоб створити тепло, яке відчуваєш серцем.

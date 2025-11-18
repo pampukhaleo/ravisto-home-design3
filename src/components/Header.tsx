@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="text-2xl font-bold text-heading">
-            Ravisto<span className="text-terracotta">.Home</span>
+            Ravisto Bloom<span className="text-terracotta"> Home</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -58,7 +58,7 @@ const Header = () => {
                 href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Перейти в Instagram Ravisto.Home"
+                aria-label="Перейти в Instagram Ravisto Bloom Home"
               >
                 <Instagram className="w-5 h-5" />
               </a>

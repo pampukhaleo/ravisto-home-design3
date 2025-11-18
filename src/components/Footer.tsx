@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-2xl font-bold mb-4">
-              Ravisto<span className="text-terracotta">.Home</span>
+              Ravisto Bloom<span className="text-terracotta"> Home</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Преміальний домашній текстиль для вашого затишку
@@ -16,7 +16,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-smooth"
-                aria-label="Instagram сторінка Ravisto.Home"
+                aria-label="Instagram сторінка Ravisto Bloom Home"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 pt-8 text-center text-primary-foreground/60">
-          <p>© 2025 Ravisto.Home. Всі права захищені.</p>
+          <p>© 2025 Ravisto Bloom Home. Всі права захищені.</p>
         </div>
       </div>
     </footer>

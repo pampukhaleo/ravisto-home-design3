@@ -20,7 +20,7 @@ const Header = () => {
             Ravisto Bloom<span className="text-terracotta"> Home</span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8" aria-label="Головна навігація">
             <button
               onClick={() => scrollToSection("products")}
               className="text-foreground hover:text-primary transition-smooth font-medium"
@@ -86,7 +86,7 @@ const Header = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col gap-6 mt-8">
+                <nav className="flex flex-col gap-6 mt-8" aria-label="Мобільна навігація">
                   <button
                     onClick={() => scrollToSection("products")}
                     className="text-left text-lg font-medium text-foreground hover:text-primary transition-smooth py-3 border-b border-border"

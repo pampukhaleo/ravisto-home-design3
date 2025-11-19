@@ -66,62 +66,69 @@ const Products = () => {
 
         <div className="flex flex-col gap-6 max-w-5xl mx-auto">
           {products.map((product) => (
-            <Card
+            <article
               key={product.id}
-              className="overflow-hidden border-0 shadow-soft hover:shadow-medium transition-smooth bg-card rounded-2xl group"
+              itemScope
+              itemType="https://schema.org/Product"
             >
-              <div className="flex flex-col md:flex-row">
-                <div className="relative overflow-hidden w-full md:w-80 h-56 md:h-auto flex-shrink-0">
-                  <img
-                    src={product.image}
-                    alt={`${product.name} - ${product.description} від Ravisto Bloom Home`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
-                    loading="lazy"
-                    width="320"
-                    height="256"
-                  />
-                </div>
-                <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">
-                  <div>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-heading mb-3">
-                      {product.name}
-                    </h3>
-                    <p className="text-base sm:text-lg text-muted-foreground mb-4 md:mb-6">{product.description}</p>
+              <Card className="overflow-hidden border-0 shadow-soft hover:shadow-medium transition-smooth bg-card rounded-2xl group">
+                <div className="flex flex-col md:flex-row">
+                  <div className="relative overflow-hidden w-full md:w-80 h-56 md:h-auto flex-shrink-0">
+                    <img
+                      src={product.image}
+                      alt={`${product.name} - ${product.description} від Ravisto Bloom Home`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+                      loading="lazy"
+                      width="320"
+                      height="256"
+                      itemProp="image"
+                    />
                   </div>
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <span className="text-xl sm:text-2xl md:text-3xl font-bold text-terracotta">
-                      {product.price}
-                    </span>
-                    <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                      <Button 
-                        variant="secondary" 
-                        size="lg"
-                        onClick={() => scrollToSection("contact")}
-                        className="w-full sm:w-auto h-12"
-                      >
-                        Детальніше
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        size="lg"
-                        asChild
-                        className="w-full sm:w-auto h-12"
-                      >
-                        <a 
-                          href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2"
-                        >
-                          <Instagram className="w-5 h-5" />
-                          Instagram
-                        </a>
-                      </Button>
+                  <CardContent className="p-6 md:p-8 flex flex-col justify-between flex-grow">
+                    <div>
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-heading mb-3" itemProp="name">
+                        {product.name}
+                      </h3>
+                      <p className="text-base sm:text-lg text-muted-foreground mb-4 md:mb-6" itemProp="description">
+                        {product.description}
+                      </p>
                     </div>
-                  </div>
-                </CardContent>
-              </div>
-            </Card>
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                      <span className="text-xl sm:text-2xl md:text-3xl font-bold text-terracotta" itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                        <meta itemProp="priceCurrency" content="UAH" />
+                        <span itemProp="price">{product.price}</span>
+                      </span>
+                      <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+                        <Button 
+                          variant="secondary" 
+                          size="lg"
+                          onClick={() => scrollToSection("contact")}
+                          className="w-full sm:w-auto"
+                        >
+                          Детальніше
+                        </Button>
+                        <Button 
+                          variant="outline" 
+                          size="lg"
+                          asChild
+                          className="w-full sm:w-auto"
+                        >
+                          <a
+                            href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                          >
+                            <Instagram className="w-5 h-5" />
+                            Instagram
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </div>
+              </Card>
+            </article>
           ))}
         </div>
       </div>

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Mail, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { trackFormSubmission } from "@/lib/analytics";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -46,9 +47,16 @@ const ContactForm = () => {
         description: "Ми зв'яжемося з вами найближчим часом.",
       });
       
+      // Track successful form submission
+      trackFormSubmission('contact_form', 'success');
+      
       setFormData({ name: "", phone: "", message: "" });
     } catch (error: any) {
       console.error('Error submitting form:', error);
+      
+      // Track failed form submission
+      trackFormSubmission('contact_form', 'error', error.message);
+      
       toast({
         title: "Помилка",
         description: error.message || "Не вдалося відправити заявку. Спробуйте ще раз.",

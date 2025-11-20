@@ -57,7 +57,7 @@ const Header = () => {
               className="hover:text-primary"
             >
               <a 
-                href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                href="https://www.instagram.com/_ravisto_bloom_home_?igsh=aXg0c2JlM25peTNy"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Перейти в Instagram Ravisto Bloom Home"

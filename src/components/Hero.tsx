@@ -42,7 +42,7 @@ const Hero = () => {
               className="bg-background/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none h-14 text-base"
             >
               <a
-                href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                href="https://www.instagram.com/_ravisto_bloom_home_?igsh=aXg0c2JlM25peTNy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

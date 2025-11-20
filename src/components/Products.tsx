@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
+import { trackProductInteraction } from "@/lib/analytics";
 import beddingImage from "@/assets/product-bedding.jpg";
 import pillowsImage from "@/assets/product-pillows.jpg";
 import towelsImage from "@/assets/product-towels.jpg";
@@ -102,7 +103,10 @@ const Products = () => {
                         <Button 
                           variant="secondary" 
                           size="lg"
-                          onClick={() => scrollToSection("contact")}
+                          onClick={() => {
+                            trackProductInteraction(product.name, 'order_click', product.price);
+                            scrollToSection("contact");
+                          }}
                           className="w-full sm:w-auto"
                         >
                           Детальніше
@@ -118,6 +122,7 @@ const Products = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2"
+                            onClick={() => trackProductInteraction(product.name, 'instagram_click', product.price)}
                           >
                             <Instagram className="w-5 h-5" />
                             Instagram

@@ -4,19 +4,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { trackFAQOpen } from "@/lib/analytics";
 
 const faqs = [
   {
+    id: "delivery-time",
     question: "Час доставки?",
     answer:
       "1–3 дні по Україні. При замовленні від 1200 грн - доставка безкоштовна",
   },
   {
+    id: "production-location",
     question: "Де виробляєте?",
     answer:
       "Власне виробництво та прямі постачання з країн Европи та Азії",
   },
   {
+    id: "wholesale",
     question: "Можливий опт?",
     answer:
       "Так, умови за запитом у Telegram/Instagram",
@@ -37,11 +41,23 @@ const FAQ = () => {
             </p>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
+          <Accordion 
+            type="single" 
+            collapsible 
+            className="space-y-4"
+            onValueChange={(value) => {
+              if (value) {
+                const faq = faqs.find(f => f.id === value);
+                if (faq) {
+                  trackFAQOpen(faq.question);
+                }
+              }
+            }}
+          >
+            {faqs.map((faq) => (
               <AccordionItem
-                key={index}
-                value={`item-${index}`}
+                key={faq.id}
+                value={faq.id}
                 className="border-0 shadow-soft rounded-2xl px-6 bg-card"
               >
                 <AccordionTrigger className="text-left font-semibold text-primary hover:no-underline">

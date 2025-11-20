@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://ravisto.home/sitemap.xml
+Sitemap: https://home.ravisto.ua/sitemap.xml

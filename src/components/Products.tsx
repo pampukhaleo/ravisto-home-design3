@@ -118,7 +118,7 @@ const Products = () => {
                           className="w-full sm:w-auto"
                         >
                           <a
-                            href="https://www.instagram.com/ravisto.home?igsh=aXg0c2JlM25peTNy"
+                            href="https://www.instagram.com/_ravisto_bloom_home_?igsh=aXg0c2JlM25peTNy"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2"
